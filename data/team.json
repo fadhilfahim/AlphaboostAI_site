@@ -1,0 +1,72 @@
+{
+  "members": [
+    {
+      "name": "Fadhil Fahim",
+      "role": "team member",
+      "avatar": "assets/team/fdl_profile.png",
+      "profile_url": "https://example.com/bonnie",
+      "socials": {
+        "github": "https://github.com/bonnie",
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+      }
+    },
+    {
+      "name": "Himaya Uwangi",
+      "role": "team member",
+      "avatar": "assets/team/himaya.png",
+      "socials": { 
+        "github": "https://github.com/bonnie",
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+       }
+    },
+    {
+      "name": "Abdul Nafih",
+      "role": "team member",
+      "avatar": "assets/team/nafih.png",
+      "socials": { 
+        "github": "https://github.com/bonnie",
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+       }
+    },
+    {
+      "name": "Dimagi Nethmini",
+      "role": "team member",
+      "avatar": "assets/team/dimagi.png",
+      "socials": { 
+        "github": "https://github.com/bonnie",
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+       }
+    },
+    {
+      "name": "Samadhi Rathnayake",
+      "role": "Supervisor",
+      "avatar": "assets/team/samadi.png",
+      "socials": { 
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+       }
+    },
+    {
+      "name": "Malithi Nawarathne",
+      "role": "Co Supervisor",
+      "avatar": "assets/team/malithi.png",
+      "socials": { 
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+       }
+    },
+    {
+      "name": "Asqin Haq",
+      "role": "External - Supervisor ",
+      "avatar": "assets/team/asqin.png",
+      "socials": { 
+        "linkedin": "https://www.linkedin.com/in/bonnie-green",
+        "website": "https://bonnie.dev"
+       }
+    }
+  ]
+}
