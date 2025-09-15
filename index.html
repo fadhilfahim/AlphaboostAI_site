@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script>
     tailwind.config = {
       theme: {
@@ -56,13 +57,24 @@
   <header class="sticky top-0 z-50 bg-white/70 dark:bg-night-800/70 backdrop-blur border-b border-white/30 dark:border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-3">
-        <span class="inline-block w-8 h-8 rounded-lg bg-sun-500"></span>
-        <span class="font-display text-xl tracking-tight">AlphaBoost <span class="text-brand-600">AI</span></span>
+        <span class="inline-block w-10 h-10 rounded-2xl ">
+          <img src="assets/ALphaBoost.png" alt="Logo">
+        </span>
+        <span class="font-display text-2xl tracking-tight">AlphaBoost <span class="text-brand-600">AI</span></span>
       </a>
-      <nav class="hidden md:flex items-center gap-6 font-medium">
-        <a href="#intro" class="hover:text-brand-600">Introduction</a>
-        <a href="#rq" class="hover:text-brand-600">Research Question</a>
-        <a href="#objectives" class="hover:text-brand-600">Objectives</a>
+      <nav class="hidden md:flex items-center gap-6 font-medium relative">
+        <div class="group">
+          <button class="hover:text-brand-600 flex items-center gap-1">
+            <span>Research</span>
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="absolute hidden group-hover:block bg-white dark:bg-night-800 shadow-lg rounded-lg pt-4 pb-2 w-48 border border-black/5 dark:border-white/10">
+            <a href="#intro" class="block px-4 py-2 text-sm hover:bg-brand-50 dark:hover:bg-white/5">Introduction</a>
+            <a href="#gaps" class="block px-4 py-2 text-sm hover:bg-brand-50 dark:hover:bg-white/5">Research Gaps</a>
+            <a href="#questions" class="block px-4 py-2 text-sm hover:bg-brand-50 dark:hover:bg-white/5">Research Questions</a>
+            <a href="#objectives" class="block px-4 py-2 text-sm hover:bg-brand-50 dark:hover:bg-white/5">Objectives</a>
+          </div>
+        </div>
         <a href="#stack" class="hover:text-brand-600">Tools & Tech</a>
         <a href="#timeline" class="hover:text-brand-600">Timeline</a>
         <a href="#team" class="hover:text-brand-600">Team</a>
@@ -77,7 +89,8 @@
     <div id="mobile" class="hidden md:hidden border-t border-white/30 dark:border-white/10">
       <nav class="grid grid-cols-2 gap-2 p-3 text-sm">
         <a href="#intro" class="py-2">Introduction</a>
-        <a href="#rq" class="py-2">Research Question</a>
+        <a href="#gaps" class="py-2">Research Gaps</a>
+        <a href="#questions" class="py-2">Research Questions</a>
         <a href="#objectives" class="py-2">Objectives</a>
         <a href="#stack" class="py-2">Tools & Tech</a>
         <a href="#timeline" class="py-2">Timeline</a>
@@ -112,17 +125,9 @@
       </div>
       <div class="relative">
         <div class="rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-soft bg-white/60">
-          <img src="assets/banner.png" alt="AlphaBoost banner" class="w-full h-full object-cover">
+          <img src="assets/alphaboostAi_banner.png" alt="AlphaBoost banner" class="w-full h-full object-cover">
         </div>
-        <!-- a tiny rocket path -->
-        <svg class="absolute -right-6 top-3 w-24" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 58 C 24 40, 42 24, 58 6" stroke="#94d2ff" stroke-width="3" stroke-dasharray="6 6" stroke-linecap="round"/>
-          <g transform="translate(48,8) rotate(20)">
-            <path d="M0 0 L10 6 L0 12 Z" fill="#ff6b6b"/>
-            <circle cx="4" cy="6" r="2" fill="white"/>
-            <path d="M-3 6 l5 -2 l-1 4 Z" fill="#ffd166"/>
-          </g>
-        </svg>
+        
       </div>
     </div>
 
@@ -263,14 +268,38 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="font-display text-4xl mb-8">Tools & Tech</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">Python • PyTorch • OpenCV</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">EasyOCR/CRAFT (spacing)</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">ResNet‑18/50 (baseline)</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">ResNet‑18 + SVM (size)</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">XGBoost (prediction)</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">Firebase / Firestore</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">Flask • Colab • Ngrok</div>
-        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5">Tailwind • Netlify/GitHub Pages</div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-python-plain"></i><i class="devicon-pytorch-original"></i><i class="devicon-opencv-plain"></i></div>
+          <p>Python • PyTorch • OpenCV</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-google-plain"></i></div>
+          <p>EasyOCR/CRAFT (spacing)</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-pytorch-plain"></i></div>
+          <p>ResNet‑18/50 (baseline)</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-pytorch-plain"></i></div>
+          <p>ResNet‑18 + SVM (size)</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-r-original"></i></div>
+          <p>XGBoost (prediction)</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-firebase-plain"></i></div>
+          <p>Firebase / Firestore</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-flask-original"></i><i class="devicon-google-plain"></i></div>
+          <p>Flask • Colab • Ngrok</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-white/5 border border-black/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-4 text-5xl mb-3 p-2 bg-brand-50/60 dark:bg-white/5 rounded-xl"><i class="devicon-tailwindcss-plain"></i><i class="devicon-netlify-plain"></i><i class="devicon-github-original"></i></div>
+          <p>Tailwind • Netlify/GitHub</p>
+        </div>
       </div>
     </div>
   </section>
@@ -465,7 +494,7 @@
       <div class="text-sm flex items-center gap-4">
         <a class="underline" href="#documents">Files</a>
         <a class="underline" href="#team">Team</a>
-        <a class="underline" href="#rq">Research Question</a>
+        <a class="underline" href="#questions">Research Questions</a>
       </div>
     </div>
   </footer>
