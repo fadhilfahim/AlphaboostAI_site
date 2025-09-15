@@ -6,9 +6,9 @@
       "avatar": "assets/team/fdl_profile.png",
       "profile_url": "https://example.com/bonnie",
       "socials": {
-        "github": "https://github.com/bonnie",
+        "github": "https://github.com/fadhilfahim",
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
       }
     },
     {
@@ -18,7 +18,7 @@
       "socials": { 
         "github": "https://github.com/bonnie",
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
        }
     },
     {
@@ -28,7 +28,7 @@
       "socials": { 
         "github": "https://github.com/bonnie",
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
        }
     },
     {
@@ -38,7 +38,7 @@
       "socials": { 
         "github": "https://github.com/bonnie",
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
        }
     },
     {
@@ -47,7 +47,7 @@
       "avatar": "assets/team/samadi.png",
       "socials": { 
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
        }
     },
     {
@@ -56,7 +56,7 @@
       "avatar": "assets/team/malithi.png",
       "socials": { 
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
        }
     },
     {
@@ -65,7 +65,7 @@
       "avatar": "assets/team/asqin.png",
       "socials": { 
         "linkedin": "https://www.linkedin.com/in/bonnie-green",
-        "website": "https://bonnie.dev"
+        "email": "fadhil2k1@gmail.com"
        }
     }
   ]
