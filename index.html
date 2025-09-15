@@ -474,8 +474,7 @@
   <section id="contact" class="py-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="font-display text-4xl mb-6">Contact Us</h2>
-      <form name="contact" method="POST" data-netlify="true" class="space-y-4">
-        <input type="hidden" name="form-name" value="contact">
+      <form action="https://formspree.io/f/xblaegeb" method="POST" class="space-y-4">
         <div class="grid sm:grid-cols-2 gap-4">
           <input class="w-full px-4 py-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5" placeholder="Your Name" name="name" required>
           <input type="email" class="w-full px-4 py-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5" placeholder="Email" name="email" required>
@@ -483,7 +482,6 @@
         <textarea class="w-full px-4 py-3 rounded-xl border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/5" rows="5" placeholder="Message" name="message" required></textarea>
         <button class="px-6 py-3 rounded-2xl bg-sun-500 text-night-800 font-semibold hover:bg-sun-600">Send</button>
       </form>
-      <p class="text-xs opacity-70 mt-3">Netlify forms work out-of-the-box on static hosting. Otherwise replace with an email link.</p>
     </div>
   </section>
 
